@@ -1,0 +1,19 @@
+INDEX VERSION 1.134+/home/sidi/sidi/DAW/1DAW/entornos_desarrollo/prueba/plantilla_endes/.metadata/.plugins/org.eclipse.jdt.core
+1865797976.index
+2890920299.index
+2283238665.index
+2167446744.index
+4060254830.index
+3945127615.index
+2252117612.index
+1548400670.index
+3108063423.index
+2005208933.index
+4155514783.index
+3117731733.index
+1787405474.index
+2840287973.index
+3781914857.index
+3522617268.index
+3189586431.index
+12781198.index

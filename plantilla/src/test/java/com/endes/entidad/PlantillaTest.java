@@ -2,6 +2,8 @@ package com.endes.entidad;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.List;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
@@ -36,4 +38,31 @@ class PlantillaTest {
         // Verificar el mensaje de la excepción
         assertEquals("El empleado con DNI 11111111H ya está contratado", ex.getMessage());
     }
+    
+
+@Test
+
+   void testGetEmpleadosPorNombre() {
+
+           
+
+           Empleado tecnico1 = new Tecnico("11111111H", "Alejandro", "Fernández", 1000.0, 1);
+
+           Empleado tecnico2 = new Tecnico("22222222B", "Alejandro", "Perez", 1000.0, 1);
+
+           plantilla.contratarEmpleado(tecnico1);
+
+           plantilla.contratarEmpleado(tecnico2);
+
+           
+
+           int totalEsperado = 2;
+
+           
+
+           List<Empleado> empleados = plantilla.getEmpleadosPorNombre("Ale");
+
+           assertEquals(totalEsperado, empleados.size(), "No coincide el total");
+    
+}
 }
